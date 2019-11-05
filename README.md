@@ -1,6 +1,6 @@
-curl -X POST "http://localhost:8080/api/v1/customer/saveAll" -H "accept: */*" -H "Content-Type: application/json" -d "[ { \"name\": \"string1\", \"accountNumber\": \"string1\", \"id\": 1, \"version\": 0 }, { \"name\": \"string2\", \"accountNumber\": \"string2\", \"id\": 2, \"version\": 0 }]"
+`curl -X POST "http://localhost:8080/api/v1/customer/saveAll" -H "accept: */*" -H "Content-Type: application/json" -d "[ { \"name\": \"string1\", \"accountNumber\": \"string1\", \"id\": 1, \"version\": 0 }, { \"name\": \"string2\", \"accountNumber\": \"string2\", \"id\": 2, \"version\": 0 }]"`
 
-
+```
 com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.example.basecrudspringrestendpoint.presentation.dto.core.BaseDto` (no Creators, like default construct, exist): abstract types either need to be mapp
 ed to concrete types, have custom deserializer, or contain additional type information
  at [Source: (PushbackInputStream); line: 2, column: 3] (through reference chain: java.util.ArrayList[0])
@@ -69,3 +69,4 @@ ed to concrete types, have custom deserializer, or contain additional type infor
         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_162]
         at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.24.jar:9.0.24]
         at java.lang.Thread.run(Thread.java:748) [na:1.8.0_162]
+```
